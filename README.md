@@ -8,5 +8,20 @@ _Click the button bellow to launch in Project IDX_
 ## Jupyter Notebook
 When running notebooks select the **.venv** python kernel.
 
+## Examples
+In the **setups** directory there are simple examples using python ASE (Atomic Simulation Environment) with QE in jupyter notebook.
+
+
+### CLI Example
+There is also an CLI example on **setups/scf** based on the example on this article for [Self consistent field calculation for silicon](https://pranabdas.github.io/espresso/hands-on/scf).
+
+To run the calculation open a terminal and run the following:
+```sh
+cd setups/scf
+pw.x < pw.scf.silicon.in > pw.scf.silicon.out
+```
+
+Results of the self consistent calculation will be stored in **pw.scf.silicon.out**.
+
 ## Credits
 Included Pseudopotentials are from [SSSP Efficiency v1.3.0](https://www.materialscloud.org/discover/sssp/table/efficiency).
