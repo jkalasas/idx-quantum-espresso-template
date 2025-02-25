@@ -1,0 +1,7 @@
+.venv
+espresso.*
+pwscf.save
+pwscf.xml
+tmp/
+CRASH
+*.log
