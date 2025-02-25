@@ -46,7 +46,9 @@
         # Example: start a background task to watch and re-build backend code
         # watch-backend = "npm run watch-backend";
         active-venv = ''
+          [[ -d .venv ]] || python -m venv .venv
           source .venv/bin/activate
+          pip install ase notebook
         '';
       };
     };
